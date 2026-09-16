@@ -1,3 +1,7 @@
+# _4.8_ (2026-09-16)
+- **(Bug Fix)** Amazon Q profile selection no longer fails when one regional endpoint is unreachable (for example, blocked by a network firewall); the plugin now falls back to the other regions and only reports an error when profile listing fails in every region
+- **(Removal)** Removed support for IDEs based on the 2025.1 and 2025.2 platforms
+
 # _4.7_ (2026-08-19)
 - **(Feature)** Amazon Q: Clearer message when signing in with an account that is not eligible for Amazon Q Developer, instead of a generic profile loading failure
 
