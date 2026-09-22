@@ -126,7 +126,10 @@ object IdeVersions {
                     "com.intellij.java",
                     "com.intellij.gradle",
                     "org.jetbrains.idea.maven",
-                    "com.intellij.properties"
+                    "com.intellij.properties",
+                    // JCEF split out of the platform into its own bundled plugin in 2026.2; needed on the
+                    // compile classpath. The runtime edge is already declared in amazonq's plugin.xml.
+                    "com.intellij.modules.jcef"
                 ),
                 marketplacePlugins = listOf(
                     "org.toml.lang:262.8665.176",
@@ -143,7 +146,10 @@ object IdeVersions {
                     // 2026.1 scooped "css" out of the JS plugin (which we depend on) into a separate package
                     "com.intellij.css",
                     "NodeJS",
-                    "com.intellij.database"
+                    "com.intellij.database",
+                    // JCEF split out of the platform into its own bundled plugin in 2026.2; needed on the
+                    // compile classpath. The runtime edge is already declared in amazonq's plugin.xml.
+                    "com.intellij.modules.jcef"
                 ),
                 marketplacePlugins = listOf(
                     "Pythonid:262.8665.258",
